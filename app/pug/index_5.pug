@@ -1,0 +1,14 @@
+- var img = 'img/';
+
+doctype
+html
+    include blocks/head.pug
+        title
+    body
+        main.page-container
+            .pass-recovery
+                .pass-recovery__wrap
+                    .pass-recovery__title Password recovery
+                    form(action="")
+                        input.incorrect(type="text" placeholder="Incorrect code")
+                        button.pass-recovery__btn(onclick="window.location.href = 'index_3.html';") Resend

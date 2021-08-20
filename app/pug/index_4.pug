@@ -1,0 +1,15 @@
+- var img = 'img/';
+
+doctype
+html
+    include blocks/head.pug
+        title
+    body
+        main.page-container
+            .pass-recovery
+                .pass-recovery__wrap
+                    .pass-recovery__title Password recovery
+                    form(action="")
+                        .error Account does not exist
+                        input(type="text" placeholder="Mobile phone or e-mail")
+                        button.pass-recovery__btn(onclick="window.location.href = 'index_3.html';") Send code

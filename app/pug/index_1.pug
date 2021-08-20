@@ -1,0 +1,42 @@
+- var img = 'img/';
+
+doctype
+html
+    include blocks/head.pug
+        title
+    body
+        include blocks/header.pug
+        main.page-container
+            section.sign
+                .sign__item
+                    .sign__form 
+                        img.sign__logo(src=img+"Logo.svg", alt="")
+                        hr
+                        form(action="")
+                            input(type="text" placeholder="Mobile phone or e-mail") 
+                            input(type="text" placeholder="Password") 
+                            button.btn(onclick="window.location.href = 'index_3.html';") Sign up
+                        button.sign__remember
+                            <div class="round">
+                                <input type="checkbox" id="checkbox" />
+                                <label for="checkbox"><span>Remember</span></label>
+                            </div>
+                        button.sign__pass(onclick="window.location.href = 'index_5.html';") Forgot your password
+                        .sign__social 
+                            a(href="#")
+                                img(src=img+"VK_Compact_Logo 1.svg", alt="")
+                            a(href="#") 
+                                img(src=img+"f_logo_RGB-Blue_512 1.svg", alt="")
+                            a(href="#") 
+                                img(src=img+"174857 1.svg", alt="")
+                        hr.dop
+                        button.btn(onclick="window.location.href = 'index_4.html';" class="create-btn") Create an account
+                    .sign__text 
+                        a(href="#") legal information
+                        a(href="#") Language
+                        a(href="#") Advertising
+                        a(href="#") The main
+                        a(href="#") For developers
+                        a(href="#") more
+                        a(href="#") Stelexy © 2021
+                img.right(src=img+"Frame 3112.svg", alt="")

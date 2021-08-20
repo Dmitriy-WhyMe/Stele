@@ -1,0 +1,16 @@
+- var img = 'img/';
+
+doctype
+html
+    include blocks/head.pug
+        title
+    body
+        main.page-container
+            .pass-recovery
+                .pass-recovery__wrap
+                    .pass-recovery__title Password recovery
+                    form(action="")
+                        .error Passwords do not match, please re-enter
+                        input(type="text" placeholder="Enter a new password") 
+                        input(type="text" placeholder="Re-enter new password")
+                        button.pass-recovery__btn(onclick="window.location.href = 'index_3.html';") Change password

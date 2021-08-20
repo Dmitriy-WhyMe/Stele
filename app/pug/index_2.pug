@@ -1,0 +1,38 @@
+- var img = 'img/';
+
+doctype
+html
+    include blocks/head.pug
+        title
+    body
+        include blocks/header.pug
+        main.page-container
+            section.create
+                .create__item
+                    .create__form 
+                        form(action="")
+                            .flex-one
+                                input.name(type="text" placeholder="Your name") 
+                                input.name(type="text" placeholder="Your last name") 
+                            input(type="text" placeholder="Mobile phone or e-mail") 
+                            input(type="text" placeholder="Password")
+                            .create__date Date of Birth
+                            .flex-two
+                                input(type="text" placeholder="Day")
+                                input(type="text" placeholder="Month")
+                                input(type="text" placeholder="Year")
+                            button.create__btn(onclick="window.location.href = 'index_3.html';") Create an account
+                        .create__social 
+                            a(href="#") 
+                                img(src=img+"VK_Compact_Logo 1.svg", alt="")
+                            a(href="#") 
+                                img(src=img+"f_logo_RGB-Blue_512 1.svg", alt="")
+                    .create__text 
+                        a(href="#") legal information
+                        a(href="#") Language
+                        a(href="#") Advertising
+                        a(href="#") The main
+                        a(href="#") For developers
+                        a(href="#") more
+                        a(href="#") Stelexy © 2021
+                img.right(src=img+"Frame 3112.svg", alt="")
